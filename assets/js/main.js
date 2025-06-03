@@ -1,16 +1,15 @@
 /**
-* Template Name: Company
+* Template Name: Evoluir
 * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
 * Updated: Aug 07 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
 */
 
 (function() {
   "use strict";
 
   /**
-   * Apply .scrolled class to the body as the page is scrolled down
+   * Aplique a classe .scrolled ao corpo conforme a página é rolada para baixo
    */
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
@@ -23,7 +22,7 @@
   window.addEventListener('load', toggleScrolled);
 
   /**
-   * Mobile nav toggle
+   * Alternar navegação móvel
    */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
@@ -35,7 +34,7 @@
   mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
   /**
-   * Hide mobile nav on same-page/hash links
+   * Ocultar navegação móvel em links de mesma página/hash
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
@@ -47,7 +46,7 @@
   });
 
   /**
-   * Toggle mobile nav dropdowns
+   * Alternar menus suspensos de navegação móvel
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
     navmenu.addEventListener('click', function(e) {
@@ -90,7 +89,7 @@
   document.addEventListener('scroll', toggleScrollTop);
 
   /**
-   * Animation on scroll function and init
+   * Animação na função scroll e init
    */
   function aosInit() {
     AOS.init({
@@ -103,7 +102,7 @@
   window.addEventListener('load', aosInit);
 
   /**
-   * Auto generate the carousel indicators
+   * Gerar automaticamente os indicadores do carrossel
    */
   document.querySelectorAll('.carousel-indicators').forEach((carouselIndicator) => {
     carouselIndicator.closest('.carousel').querySelectorAll('.carousel-item').forEach((carouselItem, index) => {
@@ -116,14 +115,14 @@
   });
 
   /**
-   * Initiate glightbox
+   * Iniciar glightbox
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
 
   /**
-   * Init isotope layout and filters
+   * Layout e filtros de isótopos init
    */
   document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
@@ -156,7 +155,7 @@
   });
 
   /**
-   * Animate the skills items on reveal
+   * Anime os itens de habilidades na revelação
    */
   let skillsAnimation = document.querySelectorAll('.skills-animation');
   skillsAnimation.forEach((item) => {
@@ -173,7 +172,7 @@
   });
 
   /**
-   * Init swiper sliders
+   * Controles deslizantes do deslizador de inicialização
    */
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
