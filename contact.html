@@ -124,30 +124,45 @@
 
           </div>
 
+        <!-- Begin Contact Form -->
+
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required="">
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" required="">
-                </div>
+
+             <form action="https://formsubmit.co/a3ff28c8c60a8e1f689de5538eed5283" method="POST">
+              <div class="fs-field">
+                <label class="fs-label" for="name">Seu Nome</label>
+                <input class="fs-input" id="name" name="name" required />
+              </div> <br>
+              <div class="fs-field">
+                <label class="fs-label" for="email">Seu E-mail</label>
+                <input class="fs-input" id="email" name="email" required />
+                <p class="fs-description">
+                  Isto me ajudará a responder à sua pergunta por e-mail.
+                </p> <br>
               </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required="">
+              <div class="fs-field">
+                <label class="fs-label" for="message">Messagem</label>
+                <textarea
+                  class="fs-textarea"
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+              </div> <br>
+              <div class="fs-button-group">
+                <button class="fs-button" type="submit">Enviar</button>
               </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Messagem" required=""></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div><!-- End Contact Form -->
+
+           
+          <!--  <form action="https://formsubmit.co/your@email.com" method="POST">
+              <input type="text" name="name" required>
+              <input type="email" name="email" required>
+              <button type="submit">Send</button>
+            </form>-->
+
+          </div>
+        <!-- End Contact Form -->
 
         </div>
 
